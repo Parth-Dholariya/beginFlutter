@@ -4,18 +4,18 @@ class HomePage extends StatelessWidget{
 
   final int days = 30;
   final String name = "Codepur";
+
+  const HomePage({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context){
     return Scaffold(
       appBar: AppBar(
-        title: Text("catalog App"),
+        title: const Text("catalog App"),
       ),
         body: Center(
-          child: Container(
-            child: Text("Welcome to $days days of code $name"),
-          ),
+          child: Text("Welcome to $days days of code $name"),
         ),
-        drawer: Drawer(),
+        drawer: const Drawer(),
       );
   }
 }
